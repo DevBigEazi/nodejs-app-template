@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NodeJS MVC App Template - A robust backend template built with Express.js" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>NodeJS MVC App Template</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>NodeJS MVC App Template</h1>
+        <p class="subtitle">A robust Node.js backend template built with Express.js following the MVC architecture</p>
+      </div>
+
+      <nav>
+        <div class="container nav-container">
+          <a href="/" class="logo">NodeJS MVC</a>
+          <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#api">API</a>
+            <a href="#installation">Installation</a>
+            <a href="https://github.com/DevBigEazi/nodejs-app-template" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </nav>
+  
+    </header>
+
+    
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <h2>Welcome to Your API Server</h2>
+          <p>This is a starting point for your RESTful API project. The server is up and running successfully!</p>
+          <div class="btn-group">
+            <a href="https://github.com/DevBigEazi/nodejs-app-template" class="btn" target="_blank">View on GitHub</a>
+            <a href="#installation" class="btn btn-outline">Get Started</a>
+          </div>
+        </div>
+      </section>
+  
+      <section id="features" class="container">
+        <div class="section-title">
+          <h2>Key Features</h2>
+        </div>
+        <div class="features">
+          <div class="feature-card">
+            <div class="feature-icon">🏗️</div>
+            <h3>MVC Architecture</h3>
+            <p>Clean separation of concerns for better code organization and maintainability. Models, Views, and Controllers are neatly organized for optimal workflow.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔐</div>
+            <h3>Authentication</h3>
+            <p>JWT-based auth system with role-based access control for secure API endpoints. Protect your routes and manage user permissions with ease.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🗄️</div>
+            <h3>MongoDB Integration</h3>
+            <p>Mongoose ODM for elegant MongoDB object modeling and data management. Easily create, read, update, and delete your application data.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚠️</div>
+            <h3>Error Handling</h3>
+            <p>Centralized error handling middleware to gracefully manage exceptions and provide clear feedback to API consumers.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>Request Logging</h3>
+            <p>Advanced logging system for debugging and monitoring API activity. Track requests, responses, and errors with detailed information.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Rate Limiting</h3>
+            <p>Protection against brute force attacks and API abuse through configurable rate limiting middleware.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="api" class="container">
+        <div class="section-title">
+          <h2>API Documentation</h2>
+        </div>
+        <div class="api-section">
+          <h3>Available Endpoints</h3>
+          <p>Here are some of the available endpoints in this template:</p>
+          
+          <div class="endpoint get-endpoint">
+            <div class="endpoint-header">
+              <span class="method get">GET</span>
+              <span class="endpoint-path">/</span>
+            </div>
+            <p>Root endpoint (this page)</p>
+            <p>Returns the welcome page for the API server.</p>
+          </div>
+          
+          <div class="endpoint post-endpoint">
+            <div class="endpoint-header">
+              <span class="method post">POST</span>
+              <span class="endpoint-path">/api/v1/admin</span>
+            </div>
+            <p>Register a new admin user with role-based permissions.</p>
+            <p>Requires username, password in the request body.</p>
+          </div>
+          <div class="endpoint patch-endpoint">
+            <div class="endpoint-header">
+              <span class="method patch">PATCH</span>
+              <span class="endpoint-path">/api/v1/admin</span>
+            </div>
+            <p>Register a new admin user with role-based permissions.</p>
+            <p>Requires username, password in the request body.</p>
+          </div>
+          <div class="endpoint delete-endpoint">
+            <div class="endpoint-header">
+              <span class="method delete">DELETE</span>
+              <span class="endpoint-path">/api/v1/admin</span>
+            </div>
+            <p>Register a new admin user with role-based permissions.</p>
+            <p>Requires username, password in the request body.</p>
+          </div>
+          
+          <div class="endpoint post-endpoint">
+            <div class="endpoint-header">
+              <span class="method post">POST</span>
+              <span class="endpoint-path">/api/v1/admin/auth</span>
+            </div>
+            <p>Authenticate admin user and receive JWT token.</p>
+            <p>Requires username and password in the request body.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section id="installation" class="container">
+        <div class="section-title">
+          <h2>Installation Guide</h2>
+        </div>
+        <div class="installation">
+          <div class="step">
+            <h3><span class="step-number">1</span> Clone the repository</h3>
+            <div class="code-block">
+              git clone https://github.com/DevBigEazi/nodejs-app-template.git<br>
+              cd NodeJS-MVC-App-Template
+            </div>
+          </div>
+          
+          <div class="step">
+            <h3><span class="step-number">2</span> Install dependencies</h3>
+            <div class="code-block">
+              npm install<br>
+              # or<br>
+              yarn install
+            </div>
+          </div>
+          
+          <div class="step">
+            <h3><span class="step-number">3</span> Create environment variables</h3>
+            <p>Create a <code>.env</code> file in the root directory with the following contents:</p>
+            <div class="code-block">
+              PORT = 8500<br>
+              DATABASE_URI = mongodb://localhost:27017/your_database<br>
+              ACCESS_TOKEN_SECRET = your_secret_key<br>
+              CLOUDINARY_CLOUD_NAME = your_cloudinary_name<br>
+              CLOUDINARY_API_KEY = your_cloudinary_api_key<br>
+              CLOUDINARY_SECRET_KEY = your_cloudinary_secret_key
+            </div>
+          </div>
+          
+          <div class="step">
+            <h3><span class="step-number">4</span> Start the development server</h3>
+            <div class="code-block">
+              npm run dev<br>
+              # or<br>
+              yarn dev
+            </div>
+          </div>
+          
+          <div class="btn-group" style="justify-content: flex-start;">
+            <a href="https://github.com/DevBigEazi/nodejs-app-template" class="btn btn-accent" target="_blank">Get Started</a>
+          </div>
+        </div>
+      </section>
+  
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <h3>NodeJS MVC App Template</h3>
+            <p>A robust foundation for building scalable and maintainable RESTful APIs</p>
+            
+            <div class="social-links">
+              <a href="https://github.com/DevBigEazi" class="social-icon" title="GitHub">
+                <!-- GitHub Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="https://x.com/DevBigEazi" class="social-icon" title="Twitter">
+                <!-- Twitter/X Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/isiaqtajudeen" class="social-icon" title="LinkedIn">
+                <!-- LinkedIn Icon SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+            </div>
+            
+            <p>Made with ❤️ by <a href="https://github.com/DevBigEazi" target="_blank" style="color: #fca130; font-weight: bold; text-decoration: none;">DevBigEazi</a></p>
+          </div>
+        </div>
+      </footer>
+  
+  
+    </main>
+
+        <script>
+      // Basic script for sticky navigation
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+          nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        } else {
+          nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+        }
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
