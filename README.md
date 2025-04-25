@@ -93,11 +93,12 @@ NodeJS-MVC-App-Template/
 - `GET /` - Root endpoint
 
 ### Admin
+You can edit the controller and routes to suit your app use cases
+-
 - `POST /api/v1/admin` - Register a new admin
 - `PATCH /api/v1/admin/` - delete an admin
 - `DELETE /api/v1/admin/` - update admn info
 - `POST /api/v1/admin/auth` - Admin login
-You can edit the controller and routes to suit your app use cases
 
 ## 🛡️ Security Features
 
@@ -156,6 +157,6 @@ This project is licensed under the ISC License - see the `package.json` file for
 
 ## 📧 Contact
 
-Your Name - your.email@example.com
+Your Name - adesholatajudeen1@gmail.com
 
-Project Link: https://github.com/yourusername/NodeJS-MVC-App-Template 
+Project Link: https://github.com/yourusername/NodeJS-MVC-App-Template
